@@ -1,1 +1,24 @@
-nihao
+
+//十六进制整数ABCDEF对应的十进制整数，所占域宽为15。
+#include<stdio.h>
+int main(){
+    printf("%15d\n",0XABCDEF);
+    return 0;
+}
+//反向输出四位数
+#include<stdio.h>
+int main(){
+    printf("%15d\n",0XABCDEF);
+    return 0;
+}
+//连续输入大学字母，转换为小写
+#include <stdio.h>
+int main() {
+    int n=0;//EOF文件结束标志，本质上是一个-1，需要按ctrl+Z来结束
+    while((n=getchar())!=EOF){//需要把gechar()函数获取的结果放在变量n中
+    printf("%c\n",(n+32));//转化为小写字母ASCII码值加上32
+    getchar();//回车也是字符，用getcha()吸收；
+    }
+
+    return 0;
+}
