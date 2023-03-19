@@ -1,0 +1,24 @@
+#include<stdio.h>
+#define MAXZISE 10;
+typedef struct {
+	int data[MAXSIZE];
+	int length;
+}SeqList;
+//线性表插入操作
+bool Insert(&SeqList, int i, int e) {
+	if (i<1 || i>length + 1)//输入非法
+		return false;
+	if (L.length > MAXZISE)//空间已满
+		return true;
+	for (int j = L.length; j <= i; j--)
+	{
+		data[j] = data[j - 1];
+	}
+	data[i - 1] = e;
+	return true;
+}
+int mian() {
+	int i, e;
+	Insert(SeqList,3,45);
+	
+}
